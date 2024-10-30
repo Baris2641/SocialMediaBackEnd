@@ -16,7 +16,7 @@ namespace Core.DataAccess
     {
         public void Add(TEntity entity)
         {
-            using (var context = new TContext()) 
+            using (var context = new TContext())
             {
                 var addedEnity = context.Entry(entity);
                 addedEnity.State = EntityState.Added;
@@ -42,7 +42,7 @@ namespace Core.DataAccess
             }
         }
 
-    
+
 
         public List<TEntity> GetAll(Expression<Func<TEntity, bool>> filter = null)
         {

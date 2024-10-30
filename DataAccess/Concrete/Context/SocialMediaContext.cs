@@ -15,6 +15,7 @@ namespace DataAccess.Concrete.Context
         {
             optionsBuilder.UseSqlServer(@"Server=DESKTOP-FJMUS3B\SQLEXPRESS;Database=SocialMedia;Trusted_Connection=true;TrustServerCertificate=true;");
         }
+        //DB Tablo oluşturma alanı
         public DbSet<User> Users { get; set; }
         public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
         public DbSet<Article> Articles { get; set; }
